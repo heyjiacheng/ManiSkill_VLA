@@ -37,7 +37,7 @@ class Args:
     env_id: Annotated[str, tyro.conf.arg(aliases=["-e"])] = "PickCube-v1"
     obs_mode: Annotated[str, tyro.conf.arg(aliases=["-o"])] = "none"
     control_mode: Annotated[Optional[str], tyro.conf.arg(aliases=["-c"])] = None
-    shader: str = "rt-fast"  # Options: "minimal", "default", "rt-fast", "rt"
+    shader: str = "default"  # Options: "minimal", "default", "rt-fast", "rt"
     sim_backend: Annotated[str, tyro.conf.arg(aliases=["-b"])] = "auto"
     render_backend: str = "gpu"  # Options: "gpu", "cpu", "auto"
     robot_uids: Annotated[Optional[str], tyro.conf.arg(aliases=["-r"])] = None
